@@ -1,0 +1,181 @@
+Last login: Thu May 12 21:25:29 on ttys000
+(base) jaysen@Jays-Macbook-Pro ~ % cd
+(base) jaysen@Jays-Macbook-Pro ~ % activate dev
+(base) jaysen@Jays-Macbook-Pro ~ % pwd
+/Users/jaysen
+(base) jaysen@Jays-Macbook-Pro ~ % ls
+Applications			Library
+Applications (Parallels)	Movies
+Creative Cloud Files		Music
+Desktop				Parallels
+Documents			Pictures
+Downloads			Public
+Dropbox				opt
+(base) jaysen@Jays-Macbook-Pro ~ % cd Desktop
+(base) jaysen@Jays-Macbook-Pro Desktop % ls
+2020 Taxes		Jay's Stuff		SAP Documents shortcut
+2021 Taxes		Noom Meal Plan.pdf
+FinTech			Noom Workout Plan.pdf
+(base) jaysen@Jays-Macbook-Pro Desktop % cd fintech
+(base) jaysen@Jays-Macbook-Pro fintech % ls
+Activities		GitLab Repository	Resources
+Admin			Practice
+Challenges		Projects
+(base) jaysen@Jays-Macbook-Pro fintech % cd challenges
+(base) jaysen@Jays-Macbook-Pro challenges % ls
+Module 1	Module 2	Module 3
+(base) jaysen@Jays-Macbook-Pro challenges % cd module 3
+cd: string not in pwd: module
+(base) jaysen@Jays-Macbook-Pro challenges % ls
+Module 1	Module 2	Module 3
+(base) jaysen@Jays-Macbook-Pro challenges % cd module_3
+cd: no such file or directory: module_3
+(base) jaysen@Jays-Macbook-Pro challenges % ls
+Module 1	Module 2	Module 3
+(base) jaysen@Jays-Macbook-Pro challenges % cd Module_3
+cd: no such file or directory: Module_3
+(base) jaysen@Jays-Macbook-Pro challenges % ls
+Module 1	Module 2	Module 3
+(base) jaysen@Jays-Macbook-Pro challenges % cd 'module 3'
+(base) jaysen@Jays-Macbook-Pro module 3 % ls
+Resources		crypto_arbitrage.ipynb
+(base) jaysen@Jays-Macbook-Pro module 3 % git clone <https://github.com/jaydsen/Module_3_Challenge.git>
+zsh: parse error near `\n'
+(base) jaysen@Jays-Macbook-Pro module 3 % git clone https://github.com/jaydsen/Module_3_Challenge.git
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+(base) jaysen@Jays-Macbook-Pro module 3 % git clone <https://github.com/jaydsen/Module_3_Challenge.git>
+zsh: parse error near `\n'
+(base) jaysen@Jays-Macbook-Pro module 3 % git clone https://github.com/jaydsen/Module_3_Challenge.git
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+(base) jaysen@Jays-Macbook-Pro module 3 % $ xcode-select --install
+zsh: command not found: $
+(base) jaysen@Jays-Macbook-Pro module 3 % xcode-select --install
+xcode-select: note: install requested for command line developer tools
+(base) jaysen@Jays-Macbook-Pro module 3 % git clone https://github.com/jaydsen/Module_3_Challenge.git
+Cloning into 'Module_3_Challenge'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+(base) jaysen@Jays-Macbook-Pro module 3 % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../.DS_Store
+	../../Activities/
+	../../Admin/
+	../
+	../../GitLab Repository/
+	../../Practice/
+	../../Projects/
+	../../Resources/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) jaysen@Jays-Macbook-Pro module 3 % cd 
+(base) jaysen@Jays-Macbook-Pro module 3 % ls
+Module_3_Challenge
+(base) jaysen@Jays-Macbook-Pro module 3 % cd "Module 3 Challenge"
+cd: no such file or directory: Module 3 Challenge
+(base) jaysen@Jays-Macbook-Pro module 3 % ls
+Module_3_Challenge
+(base) jaysen@Jays-Macbook-Pro module 3 % cd module_3_challenge
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % ls
+README.md		Resources		crypto_arbitrage.ipynb
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	Resources/
+	crypto_arbitrage.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git add crypto_arbitrage.ipynb
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   crypto_arbitrage.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	Resources/
+
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git add Resources/
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Resources/bitstamp.csv
+	new file:   Resources/coinbase.csv
+	new file:   crypto_arbitrage.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git add README.md
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % ls
+README.md		Resources		crypto_arbitrage.ipynb
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Resources/bitstamp.csv
+	new file:   Resources/coinbase.csv
+	new file:   crypto_arbitrage.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git commit -m "<initial document commit>"
+[main f1fe6e4] <initial document commit>
+ Committer: Jay Sen <jaysen@Jays-Macbook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 260854 insertions(+)
+ create mode 100644 Resources/bitstamp.csv
+ create mode 100644 Resources/coinbase.csv
+ create mode 100644 crypto_arbitrage.ipynb
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 8.58 MiB | 3.02 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jaydsen/Module_3_Challenge.git
+   3c60ca4..f1fe6e4  main -> main
+(base) jaysen@Jays-Macbook-Pro module_3_challenge % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
